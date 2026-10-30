@@ -1,11 +1,10 @@
 # Cloud Lab 1 Submission — Amazon EC2
 
-Copy this template to `cc-lab-YOUR_ID/lab1/README.md` in your own repository. Follow [the instructions](lab1-instruction.md). Put your screenshots in `lab1/images/` with the file names below.
 
 - **Student name: PRAVE  Vinuth**
 - **Student ID: e20220507**
 - **Learner Lab user name: voclabs/user5622990=PRAVE_VINUTH**
-- **Date completed: Fri 23 Oct**
+- **Date completed: Sat 24 Oct**
 
 ---
 
@@ -17,19 +16,19 @@ Copy this template to `cc-lab-YOUR_ID/lab1/README.md` in your own repository. Fo
 
 ### Key pair
 
-![Key pair](images/img2.png)
+![Key pair](images/02-key-pair.png)
 
 ### Instance details
 
-![Instance details](images/img3.png)
+![Instance details](images/03-instance-details.png)
 
 ### Browser test
 
-![Browser test](images/img4.png)
+![Browser test](images/04-browser-test.png)
 
 ### SSH connection
 
-![SSH connection](images/img5.png)
+![SSH connection](images/05-ssh-connection.png)
 
 Did you connect with your own SSH client or with EC2 Instance Connect?
 
@@ -39,21 +38,21 @@ Did you connect with your own SSH client or with EC2 Instance Connect?
 
 ### Launch configuration
 
-![Launch configuration](images/img7.png)
+![Launch configuration](images/06-challenge-launch.png)
 
 ### Security group
 
-![Challenge security group](images/img6.png)
+![Challenge security group](images/07-challenge-security-group.png)
 
 ### Running instance
 
-![Challenge instance](images/img8.png)
+![Challenge instance](images/08-challenge-instance.png)
 
 ### Commands on the instance
 
-![Terminal commands](images/img9.png)
-![](images/img10.png)
-![](images/img11.png)
+![Terminal commands—installation](images/09-challenge-terminal.png)
+![Terminal commands—installation complete](images/09-challenge-terminal-2.png)
+![Terminal commands—Apache status](images/09-challenge-terminal-3.png)
 
 Paste the commands you ran to install the web server and create `index.html`:
 
@@ -63,29 +62,24 @@ sudo yum install -y httpd
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo systemctl status httpd
+echo '<!DOCTYPE html>
+<html>
+<head>
+    <title>EC2 Challenge</title>
+</head>
+<body>
+    <h1>Welcome to the EC2 Challenge</h1>
+</body>
+</html>' | sudo tee /var/www/html/index.html
 
 ```
 
 ### Browser test
 
-![Welcome to the EC2 Challenge](images/img12.png)
+![Welcome to the EC2 Challenge](images/10-challenge-browser.png)
 
 ---
 
-## Questions
-
-1. Your security group has an SSH rule and an HTTP rule. What does each one let you do? What would stop working if you deleted the HTTP rule?
-2. In Part 1.1 you never logged in to install the web server. What installed it, and when did it run?
-3. Why does the web page open with `http://` but not with `https://`?
-4. Part 1.2 asked for a 10 GiB root volume. Where in the launch settings did you set it, and how can you check the size on the running instance?
-
-## Problems and how I solved them (optional)
-
-## AI note (optional)
-
-One suggestion an AI tool gave you and how you checked it.
-
-## Clean up
-
-- [ ] Part 1.1: instance terminated, key pair and security group deleted.
-- [ ] Part 1.2: instance terminated, security group (and key pair, if any) deleted.
+Clean up
+ - [✓]Part 1.1: instance terminated, key pair and security group deleted.
+ - [✓]Part 1.2: instance terminated, security group (and key pair, if any) deleted.
