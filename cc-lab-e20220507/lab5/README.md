@@ -2,8 +2,8 @@
 
 Copy this template to `cc-lab-YOUR_ID/lab5/README.md` in your student repository. Follow [the lab instructions](lab5-instruction.md) and save your screenshots in `lab5/images/`.
 
-- **Student name:**
-- **Student ID:**
+- **Student name:*PRAVE Vinuth*
+- **Student ID:*e20220507*
 - **Region:**
 
 ## Lab evidence
@@ -22,9 +22,9 @@ Copy this template to `cc-lab-YOUR_ID/lab5/README.md` in your student repository
 
 ![FastAPI and Vite starting on EC2](images/07-app-start.png)
 
-![Demo post and image in the browser](images/08-app-post.png)
+![Demo post and image in the browser](images/08-app-browser.png)
 
-![Matching DynamoDB item](images/09-post-item.png)
+![Matching DynamoDB item](images/09-final-infrastructure.png)
 
 ## Trace one post
 
@@ -40,7 +40,7 @@ Copy this template to `cc-lab-YOUR_ID/lab5/README.md` in your student repository
 
 ## Cleanup
 
-- [ ] EC2 instance terminated and lab security groups removed.
-- [ ] RDS instance and Aurora cluster deleted.
-- [ ] S3 bucket emptied and deleted.
-- [ ] DynamoDB table deleted.
+- [✓] EC2 instance terminated and lab security groups removed.
+- [✓] RDS instance and Aurora cluster deleted.
+- [✓] S3 bucket emptied and deleted.
+- [✓] DynamoDB table deleted.
